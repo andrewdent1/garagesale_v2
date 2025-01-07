@@ -10,14 +10,9 @@ function generateItems(category: string) {
     description: `High-quality ${category.toLowerCase()} item for sale`,
     image: `/placeholder.svg?height=400&width=400&text=${category}+${i + 1}`,
     price: Math.floor(Math.random() * 900) + 100,
-    seller: {
-      name: `Seller ${i + 1}`,
-      avatar: "/placeholder.svg?height=32&width=32",
-    },
   }))
 }
 
-// Categories from the sidebar
 const categories = [
   "Electronics",
   "Home & Garden",
@@ -30,7 +25,7 @@ const categories = [
   "Sports & Outdoors",
 ]
 
-export default function Home() {
+export default function CategoriesPage() {
   return (
     <div className="flex h-screen flex-col">
       <Header />
