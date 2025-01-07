@@ -13,10 +13,6 @@ interface CategorySectionProps {
     description: string
     image: string
     price: number
-    seller: {
-      name: string
-      avatar: string
-    }
   }>
 }
 
