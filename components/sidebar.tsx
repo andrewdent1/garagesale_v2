@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Baby, Car, Gamepad2, Heart, Home, Laptop, PawPrint, Shirt, ShoppingBag, Smartphone } from 'lucide-react'
+import { Baby, Car, Gamepad2, Heart, Home, PawPrint, Shirt, ShoppingBag, Smartphone } from 'lucide-react'
 
 const categories = [
   { name: "Electronics", icon: Smartphone },
