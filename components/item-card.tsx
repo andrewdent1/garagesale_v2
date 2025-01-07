@@ -1,19 +1,14 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 interface ItemCardProps {
   title: string
   description: string
   image: string
   price: number
-  seller: {
-    name: string
-    avatar: string
-  }
 }
 
-export function ItemCard({ title, description, image, price, seller }: ItemCardProps) {
+export function ItemCard({ title, description, image, price }: ItemCardProps) {
   return (
     <Card className="overflow-hidden">
       <div className="aspect-square relative">
@@ -29,10 +24,6 @@ export function ItemCard({ title, description, image, price, seller }: ItemCardP
         <p className="text-sm text-muted-foreground truncate">{description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="font-medium">${price}</span>
-          <Avatar className="h-6 w-6">
-            <AvatarImage src={seller.avatar} />
-            <AvatarFallback>{seller.name[0]}</AvatarFallback>
-          </Avatar>
         </div>
       </CardContent>
     </Card>
